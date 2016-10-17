@@ -14,6 +14,8 @@ import {
 
 export default class RNCrashTest extends Component {
   render() {
+     //if (1 > 0)
+     //   throw "Kabom!";
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>

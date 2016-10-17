@@ -12,11 +12,17 @@
 #import "RCTBundleURLProvider.h"
 #import "RCTRootView.h"
 
+@import SonomaCore;
+@import SonomaAnalytics;
+@import SonomaCrashes;
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+  
+  [SNMSonoma start:@"43fb78d4-fb97-4ad5-81e0-d937684835bd" withFeatures:@[[SNMAnalytics class], [SNMCrashes class]]];
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
