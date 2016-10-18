@@ -9,13 +9,19 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableOpacity
 } from 'react-native';
 
 export default class RNCrashTest extends Component {
+  crashBaby() {
+    if (1 > 0)
+      throw "Kaboom!";
+  }
+  clickMe() {
+    this.crashBaby();
+  }  
   render() {
-     //if (1 > 0)
-     //   throw "Kabom!";
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -28,6 +34,11 @@ export default class RNCrashTest extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <TouchableOpacity onPress={this.clickMe.bind(this)}>
+          <View style={styles.box}>
+            <Text>Crash!!</Text>
+          </View>
+        </TouchableOpacity>        
       </View>
     );
   }
@@ -39,6 +50,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+  },
+  box: {
+    borderColor: 'red',
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    padding: 10,
+    width: 100,
+    height: 100
   },
   welcome: {
     fontSize: 20,

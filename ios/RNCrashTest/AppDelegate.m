@@ -22,6 +22,7 @@
 {
   NSURL *jsCodeLocation;
   
+  [SNMSonoma setServerUrl:@"http://in-integration.dev.avalanch.es:8081"];
   [SNMSonoma start:@"43fb78d4-fb97-4ad5-81e0-d937684835bd" withFeatures:@[[SNMAnalytics class], [SNMCrashes class]]];
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];

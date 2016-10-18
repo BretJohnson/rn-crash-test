@@ -1,0 +1,15 @@
+2016-10-18 14:41:15.940 RNCrashTest[5845:884075] [Sonoma SDK] -[SNMCrashes configureCrashReporter]/183 [SNMCrashes] WARNING: Detecting crashes is NOT enabled due to running the app with a debugger attached.
+2016-10-18 14:41:16.536 RNCrashTest[5845:884128] App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
+2016-10-18 14:41:21.833 [error][tid:com.facebook.react.JavaScript] Kaboom!
+2016-10-18 14:41:21.844 [fatal][tid:com.facebook.react.RCTExceptionsManagerQueue] Unhandled JS Exception: Kaboom!
+2016-10-18 14:41:21.858 RNCrashTest[5845:884123] *** Terminating app due to uncaught exception 'RCTFatalException: Unhandled JS Exception: Kaboom!', reason: 'Unhandled JS Exception: Kaboom!, stack:
+i@187:243
+r@185:916
+reportFatalError@5:353
+y@62:629
+value@62:1264
+'
+*** First throw call stack:
+(0x181422db0 0x180a87f80 0x181422cf8 0x1000720a0 0x10006cde0 0x181428a60 0x181320488 0x181324db0 0x100070668 0x100093970 0x100093318 0x1002e9a7c 0x1002e9a3c 0x1002f6554 0x1002ed72c 0x1002e9a3c 0x1002f8c9c 0x1002f8364 0x181085470 0x181085020)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+(lldb) 
