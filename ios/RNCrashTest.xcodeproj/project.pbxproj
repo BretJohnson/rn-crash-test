@@ -23,9 +23,12 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		BA8C52841DB57CFD00B9923B /* SonomaAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8C52831DB57CFD00B9923B /* SonomaAnalytics.framework */; };
-		BA8C52861DB57D1500B9923B /* SonomaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8C52851DB57D1500B9923B /* SonomaCore.framework */; };
-		BA8C52881DB57D2000B9923B /* SonomaCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8C52871DB57D2000B9923B /* SonomaCrashes.framework */; };
+		B5EA198100BA475AA825CFB1 /* libRNSonomaCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131A5EE79D9423FA97CE748 /* libRNSonomaCrashes.a */; };
+		BA62B6EF1DCBD46000146873 /* SonomaCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA62B6EE1DCBD46000146873 /* SonomaCrashes.framework */; };
+		BA62B6F11DCBD46B00146873 /* SonomaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA62B6F01DCBD46B00146873 /* SonomaCore.framework */; };
+		BA62B6F31DCBD47200146873 /* SonomaAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA62B6F21DCBD47200146873 /* SonomaAnalytics.framework */; };
+		BA62B6F51DCBD62900146873 /* RNSonomaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA62B6F41DCBD62900146873 /* RNSonomaCore.framework */; };
+		BA62B6F71DCBDD6600146873 /* Sonoma-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA62B6F61DCBDD6600146873 /* Sonoma-Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,13 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		BA402B4B1DCBD3740063066E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F102B51E6A646D480C4DAD7 /* RNSonomaCrashes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5419C2701D824AA700DDF3A1;
+			remoteInfo = RNSonomaCrashes;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -128,11 +138,15 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNCrashTest/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNCrashTest/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		4F102B51E6A646D480C4DAD7 /* RNSonomaCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSonomaCrashes.xcodeproj; path = "../node_modules/react-native-sonoma-crashes/ios/RNSonomaCrashes.xcodeproj"; sourceTree = "<group>"; };
+		5131A5EE79D9423FA97CE748 /* libRNSonomaCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSonomaCrashes.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		BA8C52831DB57CFD00B9923B /* SonomaAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonomaAnalytics.framework; sourceTree = "<group>"; };
-		BA8C52851DB57D1500B9923B /* SonomaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonomaCore.framework; sourceTree = "<group>"; };
-		BA8C52871DB57D2000B9923B /* SonomaCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonomaCrashes.framework; sourceTree = "<group>"; };
+		BA62B6EE1DCBD46000146873 /* SonomaCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonomaCrashes.framework; sourceTree = "<group>"; };
+		BA62B6F01DCBD46B00146873 /* SonomaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonomaCore.framework; sourceTree = "<group>"; };
+		BA62B6F21DCBD47200146873 /* SonomaAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonomaAnalytics.framework; sourceTree = "<group>"; };
+		BA62B6F41DCBD62900146873 /* RNSonomaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RNSonomaCore.framework; sourceTree = "<group>"; };
+		BA62B6F61DCBDD6600146873 /* Sonoma-Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sonoma-Config.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA8C52881DB57D2000B9923B /* SonomaCrashes.framework in Frameworks */,
-				BA8C52861DB57D1500B9923B /* SonomaCore.framework in Frameworks */,
-				BA8C52841DB57CFD00B9923B /* SonomaAnalytics.framework in Frameworks */,
+				BA62B6F11DCBD46B00146873 /* SonomaCore.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -158,9 +170,13 @@
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
+				BA62B6F51DCBD62900146873 /* RNSonomaCore.framework in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				BA62B6F31DCBD47200146873 /* SonomaAnalytics.framework in Frameworks */,
+				BA62B6EF1DCBD46000146873 /* SonomaCrashes.framework in Frameworks */,
+				B5EA198100BA475AA825CFB1 /* libRNSonomaCrashes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +299,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				4F102B51E6A646D480C4DAD7 /* RNSonomaCrashes.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -298,9 +315,11 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				BA8C52871DB57D2000B9923B /* SonomaCrashes.framework */,
-				BA8C52851DB57D1500B9923B /* SonomaCore.framework */,
-				BA8C52831DB57CFD00B9923B /* SonomaAnalytics.framework */,
+				BA62B6F61DCBDD6600146873 /* Sonoma-Config.plist */,
+				BA62B6F41DCBD62900146873 /* RNSonomaCore.framework */,
+				BA62B6F21DCBD47200146873 /* SonomaAnalytics.framework */,
+				BA62B6F01DCBD46B00146873 /* SonomaCore.framework */,
+				BA62B6EE1DCBD46000146873 /* SonomaCrashes.framework */,
 				13B07FAE1A68108700A75B9A /* RNCrashTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNCrashTestTests */,
@@ -315,6 +334,14 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* RNCrashTest.app */,
 				00E356EE1AD99517003FC87E /* RNCrashTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA402B3A1DCBD3740063066E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA402B4C1DCBD3740063066E /* libRNSonomaCrashes.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -364,7 +391,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -429,6 +456,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = BA402B3A1DCBD3740063066E /* Products */;
+					ProjectRef = 4F102B51E6A646D480C4DAD7 /* RNSonomaCrashes.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -510,6 +541,13 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		BA402B4C1DCBD3740063066E /* libRNSonomaCrashes.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSonomaCrashes.a;
+			remoteRef = BA402B4B1DCBD3740063066E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -525,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BA62B6F71DCBDD6600146873 /* Sonoma-Config.plist in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +644,11 @@
 				INFOPLIST_FILE = RNCrashTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNCrashTest.app/RNCrashTest";
 			};
@@ -623,6 +667,11 @@
 				INFOPLIST_FILE = RNCrashTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNCrashTest.app/RNCrashTest";
 			};
@@ -644,6 +693,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-sonoma-core/ios/RNSonomaCore/**",
+					"$(SRCROOT)/../node_modules/react-native-sonoma-crashes/ios/RNSonomaCrashes",
 				);
 				INFOPLIST_FILE = RNCrashTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -672,6 +723,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-sonoma-core/ios/RNSonomaCore/**",
+					"$(SRCROOT)/../node_modules/react-native-sonoma-crashes/ios/RNSonomaCrashes",
 				);
 				INFOPLIST_FILE = RNCrashTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -723,6 +776,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-sonoma-core/ios/RNSonomaCore/**",
+					"$(SRCROOT)/../node_modules/react-native-sonoma-crashes/ios/RNSonomaCrashes",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -763,6 +818,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-sonoma-core/ios/RNSonomaCore/**",
+					"$(SRCROOT)/../node_modules/react-native-sonoma-crashes/ios/RNSonomaCrashes",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
