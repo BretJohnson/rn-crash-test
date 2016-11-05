@@ -22,7 +22,7 @@
   NSURL *jsCodeLocation;
   
   [SNMSonoma setServerUrl:@"http://in-integration.dev.avalanch.es:8081"];
-  //[SNMSonoma start:@"43fb78d4-fb97-4ad5-81e0-d937684835bd" withFeatures:@[[SNMAnalytics class], [SNMCrashes class]]];
+  //[SNMSonoma start:@"ce97bf46-2fbf-446f-a12a-8716dd1225a9" withFeatures:@[[SNMAnalytics class], [SNMCrashes class]]];
   [RNSonomaCrashes registerWithCrashDelegate:[[RNSonomaCrashesDelegateAlwaysSend alloc] init]];
   //[RNSonomaCrashes register];
 

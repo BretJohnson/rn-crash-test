@@ -22,8 +22,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		268EB2F0D0EA47E693FF47DE /* libRNSonomaCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D9BC69FC5F4770A05599B3 /* libRNSonomaCrashes.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		B5EA198100BA475AA825CFB1 /* libRNSonomaCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131A5EE79D9423FA97CE748 /* libRNSonomaCrashes.a */; };
 		BA62B6EF1DCBD46000146873 /* SonomaCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA62B6EE1DCBD46000146873 /* SonomaCrashes.framework */; };
 		BA62B6F11DCBD46B00146873 /* SonomaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA62B6F01DCBD46B00146873 /* SonomaCore.framework */; };
 		BA62B6F31DCBD47200146873 /* SonomaAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA62B6F21DCBD47200146873 /* SonomaAnalytics.framework */; };
@@ -109,9 +109,9 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		BA402B4B1DCBD3740063066E /* PBXContainerItemProxy */ = {
+		BA6EE3E61DCD9AC400FBFB2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4F102B51E6A646D480C4DAD7 /* RNSonomaCrashes.xcodeproj */;
+			containerPortal = 2847ECA2BA314113AFA184FF /* RNSonomaCrashes.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5419C2701D824AA700DDF3A1;
 			remoteInfo = RNSonomaCrashes;
@@ -138,8 +138,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNCrashTest/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNCrashTest/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		4F102B51E6A646D480C4DAD7 /* RNSonomaCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSonomaCrashes.xcodeproj; path = "../node_modules/react-native-sonoma-crashes/ios/RNSonomaCrashes.xcodeproj"; sourceTree = "<group>"; };
-		5131A5EE79D9423FA97CE748 /* libRNSonomaCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSonomaCrashes.a; sourceTree = "<group>"; };
+		2847ECA2BA314113AFA184FF /* RNSonomaCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSonomaCrashes.xcodeproj; path = "../node_modules/react-native-sonoma-crashes/ios/RNSonomaCrashes.xcodeproj"; sourceTree = "<group>"; };
+		33D9BC69FC5F4770A05599B3 /* libRNSonomaCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSonomaCrashes.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		BA62B6EE1DCBD46000146873 /* SonomaCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonomaCrashes.framework; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				BA62B6F31DCBD47200146873 /* SonomaAnalytics.framework in Frameworks */,
 				BA62B6EF1DCBD46000146873 /* SonomaCrashes.framework in Frameworks */,
-				B5EA198100BA475AA825CFB1 /* libRNSonomaCrashes.a in Frameworks */,
+				268EB2F0D0EA47E693FF47DE /* libRNSonomaCrashes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +299,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				4F102B51E6A646D480C4DAD7 /* RNSonomaCrashes.xcodeproj */,
+				2847ECA2BA314113AFA184FF /* RNSonomaCrashes.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -338,10 +338,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA402B3A1DCBD3740063066E /* Products */ = {
+		BA6EE3D91DCD9AC400FBFB2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA402B4C1DCBD3740063066E /* libRNSonomaCrashes.a */,
+				BA6EE3E71DCD9AC400FBFB2C /* libRNSonomaCrashes.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,6 +397,7 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = AFFA62L649;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
@@ -458,8 +459,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = BA402B3A1DCBD3740063066E /* Products */;
-					ProjectRef = 4F102B51E6A646D480C4DAD7 /* RNSonomaCrashes.xcodeproj */;
+					ProductGroup = BA6EE3D91DCD9AC400FBFB2C /* Products */;
+					ProjectRef = 2847ECA2BA314113AFA184FF /* RNSonomaCrashes.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -541,11 +542,11 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BA402B4C1DCBD3740063066E /* libRNSonomaCrashes.a */ = {
+		BA6EE3E71DCD9AC400FBFB2C /* libRNSonomaCrashes.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNSonomaCrashes.a;
-			remoteRef = BA402B4B1DCBD3740063066E /* PBXContainerItemProxy */;
+			remoteRef = BA6EE3E61DCD9AC400FBFB2C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -632,6 +633,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AFFA62L649;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -647,7 +649,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNCrashTest.app/RNCrashTest";
@@ -658,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = AFFA62L649;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -669,7 +671,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -704,6 +705,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = RNCrashTest;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -734,6 +737,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = RNCrashTest;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
