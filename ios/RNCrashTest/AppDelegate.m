@@ -21,7 +21,7 @@
 {
   NSURL *jsCodeLocation;
   
-  [SNMSonoma setServerUrl:@"https://in-integration.dev.avalanch.es/logs"];
+  [SNMSonoma setServerUrl:@"https://in-integration.dev.avalanch.es"];
   //[SNMSonoma start:@"ce97bf46-2fbf-446f-a12a-8716dd1225a9" withFeatures:@[[SNMAnalytics class], [SNMCrashes class]]];
   [SNMSonoma setLogLevel: SNMLogLevelVerbose];
   [RNSonomaCrashes registerWithCrashDelegate:[[RNSonomaCrashesDelegateAlwaysSend alloc] init]];
