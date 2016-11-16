@@ -10,17 +10,21 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  NativeModules
 } from 'react-native';
+import {FooClass} from './js/FooClass';
+
+//import NativeModules from 'react-native';
 
 export default class RNCrashTest extends Component {
-  crashBaby() {
-    if (1 > 0)
-      throw "Kaboom!";
+  jsCrash() {
+    var foo = new FooClass();
+    foo.method1();
   }
-  clickMe() {
-    this.crashBaby();
-  }  
+  nativeCrash() {
+    NativeModules.TestCrash.crash();
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -34,11 +38,16 @@ export default class RNCrashTest extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
-        <TouchableOpacity onPress={this.clickMe.bind(this)}>
+        <TouchableOpacity onPress={this.jsCrash.bind(this)}>
           <View style={styles.box}>
-            <Text>Crash!!</Text>
+            <Text>Crash JavaScript</Text>
           </View>
-        </TouchableOpacity>        
+        </TouchableOpacity>
+        <TouchableOpacity onPress={this.nativeCrash.bind(this)}>
+          <View style={styles.box}>
+            <Text>Crash native code</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     );
   }

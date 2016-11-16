@@ -13,6 +13,17 @@
 #import "RCTRootView.h"
 
 #import "RNSonomaCrashes.h"
+
+
+// For TestCrash 
+#import "RCTBundleURLProvider.h"
+#import "RCTRootView.h"
+#import "RCTBridgeModule.h"
+#import "RCTConvert.h"
+#import "RCTEventDispatcher.h"
+#import "RCTRootView.h"
+#import "RCTUtils.h" 
+
 @import SonomaCore;
 
 @implementation AppDelegate
@@ -44,3 +55,23 @@
 }
 
 @end
+
+
+@interface TestCrash : NSObject <RCTBridgeModule>
+
+@end
+
+@implementation TestCrash
+@synthesize bridge = _bridge;
+
+RCT_EXPORT_MODULE();
+
+RCT_EXPORT_METHOD(crash:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+  int *crashme = (void *)0;
+  while((*crashme++ = 0)) {
+
+  }
+}
+@end 
